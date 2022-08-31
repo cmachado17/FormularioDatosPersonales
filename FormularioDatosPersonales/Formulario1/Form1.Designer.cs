@@ -50,7 +50,7 @@ namespace Formulario1
             this.lblApellido.Location = new System.Drawing.Point(23, 9);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(59, 13);
-            this.lblApellido.TabIndex = 0;
+            this.lblApellido.TabIndex = 8;
             this.lblApellido.Text = "APELLIDO";
             // 
             // lblNombre
@@ -94,56 +94,66 @@ namespace Formulario1
             this.btnAceptar.Location = new System.Drawing.Point(102, 296);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 5;
+            this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(207, 296);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // txtApellido
             // 
+            this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellido.ForeColor = System.Drawing.SystemColors.MenuText;
             this.txtApellido.Location = new System.Drawing.Point(88, 6);
+            this.txtApellido.MaxLength = 25;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(264, 20);
-            this.txtApellido.TabIndex = 7;
+            this.txtApellido.TabIndex = 6;
             // 
             // txtNombre
             // 
+            this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombre.Location = new System.Drawing.Point(88, 32);
+            this.txtNombre.MaxLength = 25;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(264, 20);
-            this.txtNombre.TabIndex = 8;
+            this.txtNombre.TabIndex = 1;
             // 
             // txtDireccion
             // 
+            this.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDireccion.Location = new System.Drawing.Point(88, 85);
+            this.txtDireccion.MaxLength = 40;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(264, 20);
-            this.txtDireccion.TabIndex = 9;
+            this.txtDireccion.TabIndex = 3;
             // 
             // nudEdad
             // 
             this.nudEdad.Location = new System.Drawing.Point(88, 58);
             this.nudEdad.Name = "nudEdad";
             this.nudEdad.Size = new System.Drawing.Size(50, 20);
-            this.nudEdad.TabIndex = 11;
+            this.nudEdad.TabIndex = 2;
             // 
             // listView1
             // 
+            this.listView1.Alignment = System.Windows.Forms.ListViewAlignment.Left;
+            this.listView1.AutoArrange = false;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(26, 138);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(326, 152);
             this.listView1.TabIndex = 12;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
             // 
             // Form1
             // 
